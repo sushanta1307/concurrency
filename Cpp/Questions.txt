@@ -1,0 +1,62 @@
+
+1. Write a program that launches 5 threads, each printing "Hello from thread X".
+
+2. Launch N threads, each computing sum of a portion of an array, then combine results in main.
+
+3. Multiple threads increment a shared counter → ensure result is correct with std::mutex.
+
+4. Implement a thread-safe logging class where multiple threads log messages to a single file.
+
+5. Simulate a bank account with deposit/withdraw methods safely accessed by multiple threads.
+
+6. Thread Safe LRU cache
+
+Phase 3: Condition Variables
+
+Topics:
+
+std::condition_variable and wait/notify_one/notify_all.
+
+Producer–Consumer pattern.
+
+Spurious wakeups & why while is better than if for waiting.
+
+Practice Questions:
+
+Implement a bounded buffer (producer-consumer problem).
+
+Create a thread-safe queue using std::mutex + std::condition_variable.
+
+Implement a program where one thread waits for a flag to become true before proceeding.
+
+Phase 4: Advanced Concepts
+
+Topics:
+
+std::future, std::promise, std::packaged_task (asynchronous results).
+
+Thread pools (std::async vs custom thread pool).
+
+Atomic operations (std::atomic<int>, memory ordering basics).
+
+Practice Questions:
+
+Implement a parallel sum of a large array using futures/promises.
+
+Build a simple thread pool with a fixed number of worker threads.
+
+Compare std::atomic counter vs std::mutex-based counter in performance.
+
+Phase 5: Design + System-Oriented Questions
+
+These mimic interview-style exercises:
+
+Design a rate limiter (allow max N requests/sec) using mutex + condition variable.
+
+Dining Philosophers Problem → implement with mutexes (and prevent deadlock).
+
+Implement a thread-safe LRU cache (combine std::mutex with std::unordered_map + list).
+
+Multi-threaded file downloader: simulate downloading parts of a file in parallel and merging results.
+
+Parallel pipeline: one thread generates numbers, another squares them, another prints them (use condition variables).
