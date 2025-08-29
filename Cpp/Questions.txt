@@ -11,19 +11,15 @@
 
 6. Thread Safe LRU cache
 
-Phase 3: Condition Variables
+7. Implement a thread-safe counter using std::atomic.
 
-Topics:
+8. Read-Heavy Cache with std::shared_mutex
 
-std::condition_variable and wait/notify_one/notify_all.
+9. Implement a bounded buffer (producer-consumer problem).
 
-Producer–Consumer pattern.
+10. Implement a parallel sum of a large array using futures/promises.
 
-Spurious wakeups & why while is better than if for waiting.
-
-Practice Questions:
-
-Implement a bounded buffer (producer-consumer problem).
+11. Build a simple thread pool with a fixed number of worker threads.
 
 Create a thread-safe queue using std::mutex + std::condition_variable.
 
@@ -41,9 +37,7 @@ Atomic operations (std::atomic<int>, memory ordering basics).
 
 Practice Questions:
 
-Implement a parallel sum of a large array using futures/promises.
 
-Build a simple thread pool with a fixed number of worker threads.
 
 Compare std::atomic counter vs std::mutex-based counter in performance.
 
